@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @presentation.title %>
+</p>
+
+<p>
+  <b>Speaker:</b>
+  <%=h @presentation.speaker %>
+</p>
+
+<p>
+  <b>Conference:</b>
+  <%=h @presentation.conference %>
+</p>
+
+
+<%= link_to 'Edit', edit_presentation_path(@presentation) %> |
+<%= link_to 'Back', presentations_path %>
