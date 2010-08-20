@@ -1,8 +1,8 @@
-<!-- Indices written at Fri, 20 Aug 2010 18:31:06 UTC -->
+<!-- Indices written at Fri, 20 Aug 2010 19:36:33 UTC -->
 
 <datastore-indexes>
 
-    <!-- Used 1 time in query history -->
+    <!-- Used 4 times in query history -->
     <datastore-index kind="Pages" ancestor="false" source="auto">
         <property name="clue" direction="asc"/>
         <property name="order" direction="asc"/>
