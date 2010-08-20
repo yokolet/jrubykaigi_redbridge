@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Order</th>
     <th>Title</th>
     <th>Clue</th>
     <th>Body</th>
@@ -9,6 +10,7 @@
 
 <% @pages.each do |page| %>
   <tr>
+    <td><%=h page.order %></td>
     <td><%=h page.title %></td>
     <td><%=h page.clue %></td>
     <td><%=h page.body %></td>

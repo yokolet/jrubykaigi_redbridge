@@ -1,6 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :pages
 
+  map.resources :pages
+
   map.resources :sections
 
   map.resources :sections
