@@ -1,2 +1,26 @@
-<h1>Slideshow#index</h1>
-<p>Find me in app/views/slideshow/index.html.erb</p>
+<table>
+  <tr>
+    <td class="left">
+      <div id="title">
+        <h4><%=h @presentations[0].title %></h4><br/>
+      </div>
+      <div class="demo">
+        <% form_for :slideshow, :url => { :action => "display"}, :html => {:id => 'choices'} do |f| %>
+          <div id="radio">
+            <% @sections.each do |section| %>
+              <% idstring = section.clue %>
+              <%= radio_button_tag("radio", idstring) %><%= label_tag("radio_" + idstring, section.title, :value => idstring) %><br/>
+            <% end %>
+          </div>
+        <% end %>
+      </div> 
+      <div id="info">
+        <h4><%= @presentations[0].speaker %></h4>
+        <h4><%= @presentations[0].conference %></h4>
+      </div>
+    </td>
+    <td class="right" id="content">
+      <%= render 'content' %>
+    </td>
+  </tr>
+</table>

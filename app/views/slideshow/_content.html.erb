@@ -1,0 +1,28 @@
+<link type="text/css" href="/stylesheets/page.css" rel="Stylesheet"/>
+<link type="text/css" href="/stylesheets/blitzer/jquery-ui-1.8.2.custom.css" rel="Stylesheet"/>
+<script type="text/javascript">
+  $(function() {
+    $("#accordion").accordion();
+  });
+</script>
+
+<div id="accordion">
+  <h3><a href="#">Section 1</a></h3>
+  <div id="page_1">
+    <p>
+      <a href="http://jruby.org" target="_blank">jruby.org</a><br/>
+    </p>
+  </div>
+  <h3><a href="#">Section 2</a></h3>
+  <div id="page_2">
+    <p><div><%= params[:radio] %></div></p>
+  </div>
+  <h3><a href="#">Section 3</a></h3>
+  <div id="page_3">
+    <p>ddd</p>
+  </div>
+  <h3><a href="#">Section 4</a></h3>
+  <div id="page_4">
+    <p>eee</p>
+  </div>
+</div>
