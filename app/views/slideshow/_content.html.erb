@@ -7,22 +7,11 @@
 </script>
 
 <div id="accordion">
-  <h3><a href="#">Section 1</a></h3>
-  <div id="page_1">
-    <p>
-      <a href="http://jruby.org" target="_blank">jruby.org</a><br/>
-    </p>
-  </div>
-  <h3><a href="#">Section 2</a></h3>
-  <div id="page_2">
-    <p><div><%= params[:radio] %></div></p>
-  </div>
-  <h3><a href="#">Section 3</a></h3>
-  <div id="page_3">
-    <p>ddd</p>
-  </div>
-  <h3><a href="#">Section 4</a></h3>
-  <div id="page_4">
-    <p>eee</p>
-  </div>
+  <% @pages.each do |page| %>
+    <% idstring = "page=" + page.id.to_s %>
+    <h3><a href="#"><%= page.title %></a></h3>
+    <div id="<%= idstring %>">
+      <%= page.body %>
+    </div>
+  <% end %>
 </div>

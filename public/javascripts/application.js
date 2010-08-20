@@ -18,7 +18,7 @@ $(function() {
   $("#radio").buttonset();
   $("#choices").change(function() {
     var whatButton = $('#choices input:radio:checked').attr("id");
-    alert(whatButton);
+    //alert(whatButton);
     //var the_action = $(this).attr("action");
     //alert(the_action);
     //$.get(this.href, { button: whatButton }, null, "script");
