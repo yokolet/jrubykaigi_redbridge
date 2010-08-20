@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :pages
+
   map.resources :sections
 
   map.resources :sections
@@ -19,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
   #   map.resources :products
   map.resources :presentations
   map.resources :sections
+  map.resources :pages
 
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
