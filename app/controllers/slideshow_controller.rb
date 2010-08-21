@@ -21,6 +21,7 @@ class SlideshowController < ApplicationController
   end
 
   def dialog
+    @snippets = Snippet.all(:name => params[:value])
     respond_to do |format|
       format.html # dialog.html.erb
       format.js # dialog.js.erb

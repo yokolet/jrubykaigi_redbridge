@@ -6,9 +6,9 @@
       fillSpace: true
     });
     $('#showcode').click(function() {
-      $('#snippet').dialog({ autoOpen: false });
+      $('#snippet').dialog({ autoOpen: false, modal: true, minWidth: 400 });
       var codeName = $(this).attr("value");
-      $.post("/slideshow/dialog", $(this).serialize(), null, "script");
+      $.post("/slideshow/dialog", { value: codeName }, null, "script");
       //alert(codeName);
       $('#snippet').dialog('open');
       return false;

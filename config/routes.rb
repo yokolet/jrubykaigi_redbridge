@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :snippets
+
   map.resources :sections
   map.resources :pages
   map.resources :presentations
