@@ -1,1 +1,1 @@
-$("#snippet").html("<%= escape_javascript(render(:partial => "code")) %>");
+$("<%= params[:snippet] %>").html("<%= escape_javascript(render(:partial => "code")) %>");
