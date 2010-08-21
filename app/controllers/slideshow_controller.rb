@@ -20,4 +20,11 @@ class SlideshowController < ApplicationController
     end
   end
 
+  def dialog
+    respond_to do |format|
+      format.html # dialog.html.erb
+      format.js # dialog.js.erb
+    end
+  end
+
 end

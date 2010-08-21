@@ -5,9 +5,19 @@
     $("#accordion").accordion({
       fillSpace: true
     });
+    $('#showcode').click(function() {
+      $('#snippet').dialog({ autoOpen: false });
+      var codeName = $(this).attr("value");
+      $.post("/slideshow/dialog", $(this).serialize(), null, "script");
+      //alert(codeName);
+      $('#snippet').dialog('open');
+      return false;
+    });
   });
 </script>
-
+<div id="snippet" title="Sample Code">
+<!-- sample code -->
+</div>
 <div id="accordion">
   <% @pages.each do |page| %>
     <% idstring = "page=" + page.id.to_s %>
