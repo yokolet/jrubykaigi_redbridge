@@ -2,7 +2,7 @@
   <tr>
     <td class="left">
       <div id="title">
-        <h4><%=h @presentations[0].title %></h4><br/>
+        <h4 class="headline"><%=h @presentations[0].title %></h4><br/>
       </div>
       <div class="demo">
         <% form_for :slideshow, :url => { :action => "display"}, :html => {:id => 'choices'} do |f| %>
@@ -15,8 +15,8 @@
         <% end %>
       </div> 
       <div id="info">
-        <h4><%= @presentations[0].speaker %></h4>
-        <h4><%= @presentations[0].conference %></h4>
+        <h4 class="headline"><%= @presentations[0].speaker %></h4>
+        <h4 class="headline"><%= @presentations[0].conference %></h4>
       </div>
     </td>
     <td class="right" id="content">
