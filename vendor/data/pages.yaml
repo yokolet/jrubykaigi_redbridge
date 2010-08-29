@@ -1,0 +1,242 @@
+--- 
+- :id: 7
+  :order: 1
+  :title: Java Implementation For Ruby
+  :clue: intro
+  :body: !str:AppEngine::Datastore::Text "<p>\r\n\
+    <h4>Where to go</h4>\r\n\
+    <ul>\r\n\
+    <li>JRuby.org : <a href=\"http://jruby.org/\" target=\"_blank\">http://jruby.org/</a></li>\r\n\
+    <li>JRuby Wiki : <a href=\"http://kenai.com/projects/jruby/pages/Home\" target=\"_blank\">http://kenai.com/projects/jruby/pages/Home</a></li>\r\n\
+    <li>\xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9EJRuby : <a href=\"http://jruby-ja.blogspot.com/\" target=\"_blank\">http://jruby-ja.blogspot.com/</a></li>\r\n\
+    <li>[Book] Using JRuby : <a href=\"http://pragprog.com/titles/jruby/using-jruby\" target=\"_blank\">http://pragprog.com/titles/jruby/using-jruby</a></li>\r\n\
+    </ul>\r\n\
+    <h4>JRuby is portable because it is Java application.</h4>\r\n\
+    <ul>\r\n\
+    <li>Write once, run anywhere</li>\r\n\
+    </ul>\r\n\
+    <h4>Run in both Ruby and Java ways</h4>\r\n\
+    <button id=\"showcode\" class=\"ui-state-default ui-corner-all\" value=\"command sample\">Show Example</button></li>"
+- :id: 8
+  :order: 2
+  :title: Performance Tuning by Java Options
+  :clue: intro
+  :body: !str:AppEngine::Datastore::Text "<h4>Because JRuby is a Java application, Java options work.</h4>\r\n\
+    <ul>\r\n\
+    <li>-client (choose client VM)</li>\r\n\
+    <li>-Xmx, -Xms (maximum and minimum heap size)</li>\r\n\
+    <li>-Xbootclasspath (boot class path setting)</li>\r\n\
+    </ul>\r\n\
+    <button id=\"showcode\" class=\"ui-state-default ui-corner-all\" value=\"java options\">Show Example</button>\r\n\
+    <h4>Must go web sites</h4>\r\n\
+    <ul>\r\n\
+    <li><a href=\"http://kenai.com/projects/jruby/pages/PerformanceTuning\" target=\"_blank\">Performance Tuning</a> -- JRuby Wiki</li>\r\n\
+    <li><a href=\"http://jruby-ja.blogspot.com/2010/06/jruby.html\" target=\"_blank\">\r\n\
+    JRuby\xE3\x81\xAE\xE3\x83\x91\xE3\x83\x95\xE3\x82\xA9\xE3\x83\xBC\xE3\x83\x9E\xE3\x83\xB3\xE3\x82\xB9\xE3\x81\xAE\xE6\x9B\xB4\xE3\x81\xAA\xE3\x82\x8B\xE5\x90\x91\xE4\xB8\x8A\xE3\x82\x92\xE7\x9B\xAE\xE6\x8C\x87\xE3\x81\x97\xE3\x81\xA6</a> -- \xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9EJRuby</li>\r\n\
+    <li><a href=\"http://blog.headius.com/2009/01/my-favorite-hotspot-jvm-flags.html\" target=\"_blank\">\r\n\
+    My Favorite Hotspot JVM Flags</a> -- Headius</li>\r\n\
+    </ul>"
+- :id: 10
+  :order: 1
+  :title: Yoko is
+  :clue: self-intro
+  :body: !str:AppEngine::Datastore::Text |
+    <h4>Currently,</h4>
+    <ul>
+    <li>A committer of JRuby and Nokogiri projects</li>
+    </ul>
+    <h4>So far,</h4>
+    <ul>
+    <li>A more than ten years of Java programmer.</li>
+    </ul>
+    <h4>Before,</h4>
+    <ul>
+    <li>A Java Servlet Evangelist. (Maybe by 2005)</li>
+    </ul>
+    <h4>Here</h4>
+    <ul>
+    <li>Twitter: @yokolet</li>
+    <li>Blog: <a href="http://yokolet.blogspot.com/" target="_blank">http://yokolet.blogspot.com/</a>(en)/<a href="http://d.hatena.ne.jp/yokolet/" target="_blank">http://d.hatena.ne.jp/yokolet/</a>(ja)<br/></li>
+    </ul>
+
+- :id: 11
+  :order: 2
+  :title: Why JRuby? Nokogiri?
+  :clue: self-intro
+  :body: !str:AppEngine::Datastore::Text "<p>\r\n\
+    <h4>One day,</h4>\r\n\
+    <ul>\r\n\
+    <li>Rails looked good.</li>\r\n\
+    <li>But, I wanted to stay on Java.</li>\r\n\
+    <li>JRuby was the answer.</li>\r\n\
+    </ul>\r\n\
+    <h4>One day,</h4>\r\n\
+    <ul>\r\n\
+    <li>I wrote a book review -- \"Java\xE4\xB8\x8A\xE3\x81\xA7\xE8\xA4\x87\xE6\x95\xB0\xE3\x81\xAE\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\x97\xE3\x83\x88\xE8\xA8\x80\xE8\xAA\x9E\xE3\x81\x8C\xE8\x9E\x8D\xE5\x90\x88\xE3\x81\x99\xE3\x82\x8B\xE4\xB8\x96\xE7\x95\x8C\xE3\x82\x92\xE4\xBD\x93\xE9\xA8\x93\"<br/>\r\n\
+    <a href=\"http://journal.mycom.co.jp/articles/2007/10/25/java/index.html\" target=\"_blank\" style=\"position: relative; left:50px;\">http://journal.mycom.co.jp/articles/2007/10/25/java/index.html</a></li>\r\n\
+    <li>That led me to JSR223, then RedBridge.</li>\r\n\
+    </ul>\r\n\
+    <h4>One day,</h4>\r\n\
+    <ul>\r\n\
+    <li>I read Sergio's Blog, \"<a href=\"http://www.serabe.com/2009/12/01/do-you-wanna-help-us-with-pure-java-nokogiri/\" target=\"_blank\">Do you wanna help us with pure-Java Nokogiri?</a>\".</li>\r\n\
+    <li>I had an experience of XML processing and knew JRuby's internal API.</li>\r\n\
+    <li>I thought that was my job!</li>\r\n\
+    </ul>\r\n\
+    </p>"
+- :id: 14
+  :order: 3
+  :title: Java Is A Ruby's Close Friend
+  :clue: intro
+  :body: !str:AppEngine::Datastore::Text |-
+    <p>
+    <h4>Ruby can use Java platform API, Apache XXXX, or other</h4>
+    <ul>
+    <li>Swing, Apache Hadoop, ....</li>
+    </ul>
+    <h4>Ruby can extend Java classes and implement Java interfaces</h4>
+    <button id="showcode" class="ui-state-default ui-corner-all" value="interface imple">Show Example</button>
+    <h4>Test tools for Ruby is also for Java</h4>
+    <ul>
+    <li>Rspec, Cucmber, ...</li>
+    </ul>
+    <h4>Ruby runs on web application servers for Java</h4>
+    <ul>
+    <li>GlassFish, Tomcat, Google App Engine, ....</li>
+    </ul>
+    </p>
+- :id: 15
+  :order: 1
+  :title: Small Bridge Between Java and Ruby
+  :clue: redbridge
+  :body: !str:AppEngine::Datastore::Text |-
+    <p>
+    <h4>RedBridge is</h4>
+    <div>
+    <img src="/images/small_redbridge.jpg" height="200"/><img src="/images/bridge.png" height="200"/></div>
+    <h4>Small Java API, but a big difference</h4>
+    <ul>
+    <li>RedBridge guides you. (You might love your own way, but ...)</li>
+    <li>RedBridge offers you an easy path. (You might love adventure, but ...)</li>
+    </ul>
+    </p>
+- :id: 16
+  :order: 2
+  :title: Part Of JRuby
+  :clue: redbridge
+  :body: !str:AppEngine::Datastore::Text |-
+    <p>
+    <h4>RedBridge is org.jruby.embed.* packages</h4>
+    <div>
+    <ul>
+    <li>embed core : org.jruby.embed</li>
+    <li>embed core : org.jruby.embed.jsr223</li>
+    <li>embed core : org.jruby.embed.bsf</li>
+    </ul>
+    <img src="images/redbridge_stack.png" height="200"/ style="position: relative; top:-150px; left:450px;">
+    </div>
+    <div style="position: relative; top:-150px;">
+    <h4>JRuby supports RedBridge</h4>
+    <ul>
+    <li>Test cases of RedBridge is a part of JRuby.</li>
+    <li>RedBridge absorbs JRuby's internal change.</li>
+    </ul>
+    </div>
+    </p>
+- :id: 17
+  :order: 5
+  :title: RedBridge or JSR223?
+  :clue: detail
+  :body: !str:AppEngine::Datastore::Text |-
+    <h4>Ideas are almost the same</h4>
+    <ul>
+    <li>Parse once, eval many times</li>
+    <li>Ruby's method invocation</li>
+    <li>Interface implementation by Ruby</li>
+    <li>Sharing variables</li>
+    </ul>
+    <h4>The difference is</h4>
+    <ul>
+    <li>JRuby friendly or standard</li>
+    </ul>
+    <h4>Go JRuby Wiki</h4>
+- :id: 18
+  :order: 2
+  :title: Ruby Is Java's Close Friend - Ruby Method / Interface Impl
+  :clue: detail
+  :body: !str:AppEngine::Datastore::Text |-
+    <h4>Execute Ruby Methods from Java</h4>
+    <h4>Implement Java interface by Ruby</h4>
+    <button id="showcode" class="ui-state-default ui-corner-all" value="InterfaceImplSample.java">Show Example</button>
+- :id: 19
+  :order: 1
+  :title: JRubyKaigi 2010
+  :clue: cover
+  :body: !str:AppEngine::Datastore::Text |-
+    <h1>Want To Use Ruby From Java?<br/>
+    RedBridge Makes It Pretty Easy!</h1>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h4>http://github.com/yokolet/jrubykaigi_redbridge</h4>
+- :id: 26
+  :order: 1
+  :title: Simple and Colorful
+  :clue: detail
+  :body: !str:AppEngine::Datastore::Text |
+    <button id="showcode" class="ui-state-default ui-corner-all" value="HelloWorld.java">Hello World.java</button>
+    <h4>Instance Model and Variable Model</h4>
+    <ul>
+    <li>Singleton / Single Thread / Thread Safe</li>
+    <li>Transient / Persistent / Global / BSF</li>
+    </ul>
+    <h4>Various Runtime Setting</h4>
+    <ul>
+    <li>Home and current directories / Filename / Ruby Version / JIT setting / .... and more</li>
+    </ul>
+    <h4>Various Evaluation Options</h4>
+    <ul>
+    <li>Ruby Code from Classpath / Absolute Path / InputStream / Reader / .... and more</li>
+    </ul>
+
+- :id: 27
+  :order: 3
+  :title: Why RedBridge?
+  :clue: redbridge
+  :body: !str:AppEngine::Datastore::Text |
+    <h4>RedBridge Resolved Problems</h4>
+    <ul>
+    <li>License of JSR223 RI</li>
+    <li>Variable Type - Sharing Only Global Vars</li>
+    <li>Bug Prone Implementation</li>
+    </ul>
+
+- :id: 30
+  :order: 1
+  :title: JRubyKaigi 2010
+  :clue: conclusion
+  :body: !str:AppEngine::Datastore::Text |-
+    <h1>Q & A</h1>
+    <h5 style="position: relative; top: 350px;">photo: http://www.flickriver.com/photos/laroute/426393117/</h5>
+- :id: 31
+  :order: 3
+  :title: Ruby Is JVM Languages' Friend
+  :clue: usecases
+  :body: !str:AppEngine::Datastore::Text |-
+    <h4>Use DataMapper From Clojure</h4>
+    <button id="showcode" class="ui-state-default ui-corner-all" value="redbridge_datamapper.clj">Show Example</button>
+    <h4>Use XXX Gem From Scala, Rhino, Jython, and More</h4>
+- :id: 34
+  :order: 2
+  :title: Ruby Command From Java
+  :clue: usecases
+  :body: !str:AppEngine::Datastore::Text |-
+    <h4>Jirb_swing</h4>
+    <button id="showcode" class="ui-state-default ui-corner-all" value="jirb_swing">Show Code</button>
+- :id: 35
+  :order: 1
+  :title: Debugging
+  :clue: usecases
+  :body: !str:AppEngine::Datastore::Text |
+    <h4>Pure Java Nokogiri Debug</h4>
+

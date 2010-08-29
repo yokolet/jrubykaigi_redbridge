@@ -10,14 +10,6 @@
   </servlet-mapping>
   <security-constraint>
     <web-resource-collection>
-      <url-pattern>/remote_api/*</url-pattern>
-    </web-resource-collection>
-    <auth-constraint>
-      <role-name>admin</role-name>
-    </auth-constraint>
-  </security-constraint>
-  <security-constraint>
-    <web-resource-collection>
       <url-pattern>/contacts/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>

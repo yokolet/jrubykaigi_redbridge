@@ -1,0 +1,104 @@
+--- 
+- :id: 20
+  :name: HelloWorld.java
+  :code: !str:AppEngine::Datastore::Text |-
+    package vanilla;
+    
+    import org.jruby.embed.LocalContextScope;
+    import org.jruby.embed.ScriptingContainer;
+    
+    public class HelloWorld {
+    
+        private HelloWorld() {
+            ScriptingContainer container = new ScriptingContainer(LocalContextScope.SINGLETHREAD);
+            container.runScriptlet("puts \"Hello World!\"");
+        }
+    
+        public static void main(String[] args) {
+            new HelloWorld();
+        }
+    }
+- :id: 23
+  :name: command sample
+  :code: !str:AppEngine::Datastore::Text |
+    [Ruby Way]
+    jruby -e "puts ['Hello', 'JRuby'].join(' ')"
+    
+    
+    [Java Way]
+    java -jar /Users/yoko/Tools/jruby-1.5.2/lib/jruby.jar -e "puts ['Hello', 'JRuby'].join(' ')"
+    
+    
+
+- :id: 25
+  :name: java options
+  :code: !str:AppEngine::Datastore::Text |-
+    time jruby -J-client -J-Xms32m -X-C -X-O -ve "require 'rubygems'; require 'columnize'"
+    
+    time java -Xbootclasspath/a:/Users/yoko/Tools/jruby-1.5.2/lib/jruby.jar -jar /Users/yoko/Tools/jruby-1.5.2/lib/jruby.jar -e "puts ['Hello', 'JRuby'].join(' ')"
+- :id: 32
+  :name: redbridge_datamapper.clj
+  :code: !str:AppEngine::Datastore::Text |-
+    (import '(org.jruby.embed ScriptingContainer PathType))
+    (def c (ScriptingContainer.))
+    (. c setHomeDirectory "/Users/yoko/Tools/jruby-1.5.1")
+    (. c runScriptlet "require 'rubygems'; require 'dm-core'; require 'dm-migrations'")
+    (. c runScriptlet "DataMapper.setup(:default, 'sqlite::memory:')")
+    (. c runScriptlet PathType/CLASSPATH "category_def.rb")
+    (. c runScriptlet PathType/CLASSPATH "categories.rb")
+    (. c runScriptlet "p Category.all")
+- :id: 33
+  :name: jirb_swing
+  :code: !str:AppEngine::Datastore::Text |-
+    ScriptingContainer container = new ScriptingContainer(LocalContextScope.SINGLETHREAD);
+    String jrubyhome = container.getHomeDirectory();
+    
+    String[] paths = {jrubyhome + "/bin"};
+    container.setLoadPaths(Arrays.asList(paths));       // add "bin" directory to $LOAD_PATH
+    container.runScriptlet("p $LOAD_PATH");
+    
+    String jirb_swing = jrubyhome + "/bin/jirb_swing";
+    container.setScriptFilename(jirb_swing);            // equivalent to "-S /path/to/jirb_swing"
+    container.runScriptlet("load 'jirb_swing'");
+- :id: 36
+  :name: interface imple
+  :code: !str:AppEngine::Datastore::Text |
+    package evergreen;
+    
+    import java.util.List;
+    
+    public interface PositionFunction {
+        double getPosition(double time);
+    }
+    
+    
+    class PositionFunction
+      include Java::evergreen.PositionFunction
+      attr :v0, :s0
+      def initialize(v0, s0, system)
+      .....
+      end
+    
+      def get_position(t)
+        1.0 / 2.0 * @g * t ** 2.0 + @v0 * t + @s0
+      end
+    
+      .....
+    end
+
+- :id: 37
+  :name: InterfaceImplSample.java
+  :code: !str:AppEngine::Datastore::Text |-
+    ScriptingContainer container = new ScriptingContainer(LocalContextScope.SINGLETHREAD);
+    container.put("initial_velocity", 16.0); // setting local variables to share
+    container.put("initial_height", 32.0);
+    container.put("system", "english");
+    
+    // evaluation
+    PositionFunction result = (PositionFunction) container.runScriptlet(PathType.CLASSPATH, "ruby/position_function.rb");
+    
+    double time = 2.0;
+    double position = result.getPosition(time); // using interface method
+    double velocity = result.getVelocity(time);
+    List<String> units = ((PositionFunction)result).getUnits();
+    System.out.println(velocity + units.get(0) + ", " + position + units.get(1));

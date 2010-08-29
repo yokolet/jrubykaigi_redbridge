@@ -1,0 +1,25 @@
+--- 
+- :id: 2
+  :order: 2
+  :title: What's JRuby?
+  :clue: intro
+- :id: 3
+  :order: 1
+  :title: Yoko Who?
+  :clue: self-intro
+- :id: 5
+  :order: 3
+  :title: "RedBridge? "
+  :clue: redbridge
+- :id: 6
+  :order: 4
+  :title: More About RedBridge
+  :clue: detail
+- :id: 21
+  :order: 5
+  :title: Using RedBridge
+  :clue: usecases
+- :id: 22
+  :order: 6
+  :title: Thank You!
+  :clue: conclusion

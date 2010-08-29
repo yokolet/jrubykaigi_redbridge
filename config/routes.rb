@@ -1,9 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :snippets
+  #map.resources :snippets
 
-  map.resources :sections
-  map.resources :pages
-  map.resources :presentations
+  #map.resources :sections
+  #map.resources :pages
+  #map.resources :presentations
 
   # The priority is based upon order of creation: first created -> highest priority.
 
